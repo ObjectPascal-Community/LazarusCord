@@ -1,5 +1,9 @@
 # 🎮 Discord Rich Presence Extension for Lazarus
 
+> **NOTE**\
+> This is still a work in progress for multi platform.
+> Once this notice is removed it will be ready for at least WIndows and Linux.
+
 ## 📖 Description
 This extension integrates Discord Rich Presence with the Lazarus IDE, showing what you're editing in Lazarus on your Discord profile.
 
