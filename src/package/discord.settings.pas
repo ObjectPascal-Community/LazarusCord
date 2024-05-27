@@ -21,11 +21,11 @@ type
   TDiscordSettings = class
   private
     FXML: TXMLConfig;
-    FVersion: Integer;
     FChanged: Boolean;
     FEnableDiscord: Boolean;
     FAutoSaveInterval: Integer;
     FApplicationID: String;
+    FImageName: String;
   public
     constructor Create(const AFileName: String);
     destructor Destroy; override;
@@ -37,6 +37,7 @@ type
     property EnableDiscord: Boolean read FEnableDiscord write FEnableDiscord;
     property AutoSaveInteval: Integer read FAutoSaveInterval write FAutoSaveInterval;
     property ApplicationID: String read FApplicationID write FApplicationID;
+    property ImageName: string read FImageName write FImageName;
   end;
 
 var
@@ -78,7 +79,8 @@ begin
   begin
     FEnableDiscord:= FXML.GetValue('Discord/EnableDiscord/Value', True);
     FAutoSaveInterval:= FXML.GetValue('Discord/AutoSaveInterval/Value', DefAutoSaveInterval);
-    FApplicationID:= FXML.GetValue('Discord/ApplicationID/Value','');
+    FApplicationID:= FXML.GetValue('Discord/ApplicationID/Value','1244072383447433357');
+    FImageName:= FXML.GetValue('Discord/ImageName/Value','lazarus');
   end;
 end;
 
@@ -88,6 +90,7 @@ begin
   FXML.SetDeleteValue('Discord/EnableDiscord/Value', FEnableDiscord, True);
   FXML.SetDeleteValue('Discord/AutoSaveInterval/Value', FAutoSaveInterval, DefAutoSaveInterval);
   FXML.SetDeleteValue('Discord/ApplicationID/Value', FApplicationID, '1244072383447433357');
+  FXML.SetDeleteValue('Discord/ImageName/Value', FImageName, 'lazarus');
   FXML.Flush;
   FChanged := False;
 end;
@@ -97,6 +100,7 @@ begin
   FEnableDiscord := True;
   FAutoSaveInterval := DefAutoSaveInterval;
   FApplicationID:= '1244072383447433357';
+  FImageName :='lazarus';
   Save;
 end;
 

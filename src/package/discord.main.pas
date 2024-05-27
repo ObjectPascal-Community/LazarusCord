@@ -158,9 +158,9 @@ begin
     begin
       FDiscord:= TDiscordRPC.Create;
       FDiscord.Initialize(Settings.ApplicationID);
-      FDiscord.UpdatePresence('Lazarus '+laz_version +' Editing file: '+aFIleName, ' Start at: '+ FormatDateTime('dd/mm/yyyy hh:mm:ss',Now),'lazarus','');
+      FDiscord.UpdatePresence('Lazarus '+laz_version +' Editing file: '+aFIleName, ' Start at: '+ FormatDateTime('dd/mm/yyyy hh:mm:ss',Now),Settings.ImageName,'');
     end else
-       FDiscord.UpdatePresence('Lazarus '+laz_version +' Editing file: '+aFIleName, ' Start at: '+ FormatDateTime('dd/mm/yyyy hh:mm:ss',Now), 'lazarus','');
+       FDiscord.UpdatePresence('Lazarus '+laz_version +' Editing file: '+aFIleName, ' Start at: '+ FormatDateTime('dd/mm/yyyy hh:mm:ss',Now), Settings.ImageName,'');
   finally
     Settings.Free;
   end;

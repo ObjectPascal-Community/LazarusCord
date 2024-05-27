@@ -13,7 +13,9 @@ type
 
   TSettingsFrm = class(TForm)
     EdtApplicationID: TEdit;
+    EdtImageName: TEdit;
     Label1: TLabel;
+    LblImageName: TLabel;
     OkButton: TButton;
     cbEnableDiscord: TCheckBox;
     lbInterval: TLabel;
@@ -59,6 +61,7 @@ begin
   spAutoSaveInterval.Value := Settings.AutoSaveInteval;
   spAutoSaveInterval.Enabled := cbEnableDiscord.Checked;
   EdtApplicationID.Text:= Settings.ApplicationID;
+  EdtImageName.Text:= Settings.ImageName;
 end;
 
 procedure TSettingsFrm.SaveSettings;
@@ -66,6 +69,7 @@ begin
   Settings.EnableDiscord := cbEnableDiscord.Checked;
   Settings.AutoSaveInteval := spAutoSaveInterval.Value;
   Settings.ApplicationID := EdtApplicationID.Text;
+  Settings.ImageName:= EdtImageName.Text;
   Settings.Save;
 end;
 

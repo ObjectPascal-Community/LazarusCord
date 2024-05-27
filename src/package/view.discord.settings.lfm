@@ -1,7 +1,7 @@
 object SettingsFrm: TSettingsFrm
-  Left = 339
+  Left = 533
   Height = 152
-  Top = 315
+  Top = 322
   Width = 406
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
@@ -90,5 +90,20 @@ object SettingsFrm: TSettingsFrm
     Top = 88
     Width = 75
     Caption = 'Application ID'
+  end
+  object LblImageName: TLabel
+    Left = 15
+    Height = 15
+    Top = 116
+    Width = 66
+    Caption = 'Image name'
+  end
+  object EdtImageName: TEdit
+    Left = 104
+    Height = 23
+    Top = 116
+    Width = 136
+    TabOrder = 4
+    TextHint = 'Image Name'
   end
 end
