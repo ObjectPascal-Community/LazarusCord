@@ -3,6 +3,6 @@
   <Version Value="1"/>
   <Discord>
     <AutoSaveInterval Value="4"/>
-    <ApplicationID Value="1244072383447433357"/>
+    <ApplicationID Value="YOU_APP_ID"/>
   </Discord>
 </CONFIG>

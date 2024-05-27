@@ -13,22 +13,24 @@ If you're interested in implementing Rich Presence via IPC sockets instead of us
 ## 🛠️ Basic Usage
 First, head over to the [Discord developers site](https://discordapp.com/developers/applications/me) and create an app. Keep track of your `Client ID`—you'll need it to pass to the initialization function.
 
-![image](https://github.com/BoscoBecker/LazarusCord/assets/6303278/cdc1f545-4aaf-45a7-9e81-81300ac1b898)
+![image](imgs/Discord1.png)
 
 
 ### 💾 Installation
-Download and extract to `C:\LazarusCord`.
+Download and extract to a folder of your choice.
 
-✈ Where are?
-![image](https://github.com/BoscoBecker/LazarusCord/assets/6303278/e2925241-2e22-462f-805b-c52bc20149f1)
+✈ Where is it once installed?
+
+![image](imgs/Lazarus1.png)
 
 
 ### 📂 Folders / 🚨 See the folder permission
 
-- `/Discordrpc` - Contains Discord RPC DLLs.
-- `/Package` - Plugin for the IDE.
-- `/Source` - Abstraction to call DLLs in `DiscordRPC.pas`.
-- `/Win32/Debug` - Output for `LazarusCord.exe`, `discord-rpc.dll`, `DiscordStatus.bpl`, `send-presence.exe`.
+- `/discord-rpc/windows` - Contains Discord RPC `.dll`.
+- `/discord-rpc/linux` - Contains Discord RPC `.so`.
+- `/src/Package` - Plugin for the IDE.
+- `/src/Source` - Abstraction to call DLLs in `DiscordRPC.pas`.
+- `/bin` - Output for the various binaries.
 
 External source for Discord RPC: [discord-rpc](https://github.com/discord/discord-rpc).
 
@@ -42,4 +44,4 @@ To submit a pull request, follow these steps:
 5. 📤 Push the branch (`git push origin my-new-feature`).
 6. 🔄 Open a pull request.
 
-Give me a Star.
+Give us a Star.
