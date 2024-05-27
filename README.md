@@ -13,7 +13,8 @@ If you're interested in implementing Rich Presence via IPC sockets instead of us
 ## 🛠️ Basic Usage
 First, head over to the [Discord developers site](https://discordapp.com/developers/applications/me) and create an app. Keep track of your `Client ID`—you'll need it to pass to the initialization function.
 
-![image](https://github.com/BoscoBecker/LazarusCord/assets/6303278/48b1ea27-ad6e-4539-8ccb-46cbebba5045)
+![image](https://github.com/BoscoBecker/LazarusCord/assets/6303278/cdc1f545-4aaf-45a7-9e81-81300ac1b898)
+
 
 ### 💾 Installation
 Download and extract to `C:\LazarusCord`.
