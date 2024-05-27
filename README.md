@@ -28,9 +28,9 @@ Download and extract to a folder of your choice.
 
 - `/discord-rpc/windows` - Contains Discord RPC `.dll`.
 - `/discord-rpc/linux` - Contains Discord RPC `.so`.
-- `/src/Package` - Plugin for the IDE.
-- `/src/Source` - Abstraction to call DLLs in `DiscordRPC.pas`.
-- `/bin` - Output for the various binaries.
+- `/src/package` - Plugin for the IDE.
+- `/src/source` - Abstraction to call dynamic libraries in `DiscordRPC.pas`.
+- `/bin` - Output for the various binaries, once compiled.
 
 External source for Discord RPC: [discord-rpc](https://github.com/discord/discord-rpc).
 
