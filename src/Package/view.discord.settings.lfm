@@ -1,0 +1,94 @@
+object SettingsFrm: TSettingsFrm
+  Left = 339
+  Height = 152
+  Top = 315
+  Width = 406
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Autosave  Options'
+  ClientHeight = 152
+  ClientWidth = 406
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '3.2.0.0'
+  object spAutoSaveInterval: TSpinEdit
+    AnchorSideLeft.Control = lbInterval
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = lbInterval
+    AnchorSideTop.Side = asrCenter
+    Left = 82
+    Height = 23
+    Top = 42
+    Width = 51
+    BorderSpacing.Left = 5
+    MaxValue = 1
+    MinValue = 1
+    TabOrder = 1
+    Value = 5
+  end
+  object cbEnableDiscord: TCheckBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 15
+    Height = 19
+    Top = 15
+    Width = 131
+    BorderSpacing.Left = 15
+    BorderSpacing.Top = 15
+    Caption = 'Enable Discord Status'
+    Checked = True
+    State = cbChecked
+    TabOrder = 0
+    OnChange = cbEnableDiscordChange
+  end
+  object lbInterval: TLabel
+    AnchorSideLeft.Control = cbEnableDiscord
+    AnchorSideTop.Control = cbEnableDiscord
+    AnchorSideTop.Side = asrBottom
+    Left = 35
+    Height = 15
+    Top = 46
+    Width = 42
+    BorderSpacing.Left = 20
+    BorderSpacing.Top = 12
+    Caption = 'Interval:'
+    ParentColor = False
+  end
+  object lbSec: TLabel
+    AnchorSideLeft.Control = spAutoSaveInterval
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = spAutoSaveInterval
+    AnchorSideTop.Side = asrCenter
+    Left = 138
+    Height = 15
+    Top = 46
+    Width = 51
+    BorderSpacing.Left = 5
+    Caption = '(seconds)'
+    ParentColor = False
+  end
+  object OkButton: TButton
+    Left = 320
+    Height = 25
+    Top = 120
+    Width = 75
+    Caption = 'Save'
+    TabOrder = 2
+    OnClick = OKButtonClick
+  end
+  object EdtApplicationID: TEdit
+    Left = 104
+    Height = 23
+    Top = 88
+    Width = 136
+    TabOrder = 3
+    TextHint = 'Your Application ID'
+  end
+  object Label1: TLabel
+    Left = 15
+    Height = 15
+    Top = 88
+    Width = 75
+    Caption = 'Application ID'
+  end
+end

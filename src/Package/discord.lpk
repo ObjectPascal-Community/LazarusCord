@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <PathDelim Value="\"/>
+    <Name Value="Discord"/>
+    <Type Value="RunAndDesignTime"/>
+    <Author Value="lainz"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="..\Source"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Other>
+        <CustomOptions Value="$(IDEBuildOptions)"/>
+      </Other>
+    </CompilerOptions>
+    <Description Value="Autosave opened project. "/>
+    <License Value="GPL"/>
+    <Version Minor="1"/>
+    <Files Count="6">
+      <Item1>
+        <Filename Value="discord.status.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="Discord.Status"/>
+      </Item1>
+      <Item2>
+        <Filename Value="discord.consts.pas"/>
+        <UnitName Value="Discord.Consts"/>
+      </Item2>
+      <Item3>
+        <Filename Value="view.discord.settings.pas"/>
+        <UnitName Value="View.Discord.Settings"/>
+      </Item3>
+      <Item4>
+        <Filename Value="discord.main.pas"/>
+        <UnitName Value="Discord.Main"/>
+      </Item4>
+      <Item5>
+        <Filename Value="discord.settings.pas"/>
+        <UnitName Value="discord.Settings"/>
+      </Item5>
+      <Item6>
+        <Filename Value="..\Source\udiscordrpc.pas"/>
+        <UnitName Value="UDiscordRPC"/>
+      </Item6>
+    </Files>
+    <CompatibilityMode Value="True"/>
+    <RequiredPkgs Count="2">
+      <Item1>
+        <PackageName Value="SynEdit"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="IDEIntf"/>
+      </Item2>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <CustomOptions Items="ExternHelp" Version="2">
+      <_ExternHelp Items="Count"/>
+    </CustomOptions>
+  </Package>
+</CONFIG>
