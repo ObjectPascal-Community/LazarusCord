@@ -19,8 +19,8 @@ First, head over to the [Discord developers site](https://discordapp.com/develop
 ### 💾 Installation
 Download and extract to `C:\LazarusCord`.
 
-![image](https://github.com/BoscoBecker/LazarusCord/assets/6303278/0e0f055f-207e-4434-a4db-68c8ad4cddaf)
-
+✈ Where are?
+![image](https://github.com/BoscoBecker/LazarusCord/assets/6303278/e2925241-2e22-462f-805b-c52bc20149f1)
 
 
 ### 📂 Folders / 🚨 See the folder permission
