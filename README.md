@@ -1,7 +1,7 @@
 # 🎮 Discord Rich Presence Extension for Lazarus
 
 > **NOTE**\
-> This is still a work in progress for multi platform.
+> This is still a work in progress for multi platform.\
 > Once this notice is removed it will be ready for at least WIndows and Linux.
 
 ## 📖 Description
