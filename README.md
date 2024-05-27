@@ -26,8 +26,9 @@ Download and extract to a folder of your choice.
 
 ### 📂 Folders / 🚨 See the folder permission
 
-- `/discord-rpc/windows` - Contains Discord RPC `.dll`.
-- `/discord-rpc/linux` - Contains Discord RPC `.so`.
+- `/discord-rpc/windows` - Contains Discord RPC `.dll` files foe Windows.
+- `/discord-rpc/linux` - Contains Discord RPC `.so` files for Linux.
+- `/discord-rpc/darwin` - Contains Discord RPC `.so` files for `macOS`.
 - `/src/package` - Plugin for the IDE.
 - `/src/source` - Abstraction to call dynamic libraries in `DiscordRPC.pas`.
 - `/bin` - Output for the various binaries, once compiled.
